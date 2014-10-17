@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="daviesEye">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="vendor/bootstrap-3.2.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<title>Davies Eye Center</title>
+</head>
+
+<body ng-controller="mainCtrl">
+	<header id="mainHeader">
+		<div id="mainHeaderLogo">
+			<img src="images/Main-Header-Logo.png">
+		</div>
+	</header>
+	<div>
+	    <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+	        <div class="container">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationCollapse">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="/">Home</a>
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="navigationCollapse">
+	                <ul class="nav navbar-nav">
+	                    <li><a href="/#/about-us">About Us</a></li>
+	                    <li class="dropdown">
+	                    	<a href="/procedures/:procedure" data-toggle="dropdown" class="dropdown-toggle">Procedures <b class="caret"></b></a>
+	                    	<ul class="dropdown-menu">
+	                    	    <li><a href="/#/procedures/cataract-surgery">Cataract Surgery</a></li>
+	                    	    <li><a href="/#/procedures/ECP">ECP</a></li>
+	                    	    <li><a href="/#/procedures/refractive-surgery">Refractive Surgery</a></li>
+	                    	    <li><a href="/#/procedures/lasik">Lasik</a></li>
+	                    	    <li><a href="/#/procedures/glaucoma">Glaucoma</a></li>
+	                    	    <li><a href="/#/procedures/PRK">PRK</a></li>
+	                    	    <li><a href="/#/procedures/CK">CK</a></li>
+	                    	    <li><a href="/#/procedures/macular-degeneration">Macular Degeneration</a></li>
+	                    	</ul>
+	                    </li>
+	                    <li><a href="#">Patient Stories</a></li>
+	                    <li><a href="#">Financing</a></li>
+	                    <li><a href="#">Contact Us</a></li>
+	                </ul>
+	            </div><!-- /.navbar-collapse -->
+	        </div>
+	    </nav>
+	</div>
+	<div>
+		<ng-view>
+
+		</nv-view>
+	</div>
+
+	<!-- Javascript Links -->
+	<script src="vendor/jquery-1.11.1.js"></script>
+	<script src="vendor/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+	<script src="vendor/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/mainCtrl.js"></script>
+	<script src="js/home/homeCtrl.js"></script>
+	<script src="js/procedures/proceduresCtrl.js"></script>
+	<script src="js/aboutUs/aboutUsCtrl.js"></script>
+
+</body>
+</html>
