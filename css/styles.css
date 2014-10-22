@@ -3,10 +3,11 @@ html, body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+	background-color: #858585;
 }
 
 #mainHeader {
-	background-color: #9DCDCD;
+	background-color: #858585;
 	padding: 1em;
 }
 
@@ -45,5 +46,16 @@ html, body {
 .videoBackground {
 	padding: 1em;
 	border: 1px solid black;
+	background-color: #333333;
+}
+
+.quoteBlock {
+	margin: 2em 0;
+	padding: 0.75em;
+	border: 1px solid black;
+	border-radius: 0.5em;
 	background-color: #DDDEE0;
+	font-size: 1.25em;
+	font-family: "Open Sans";
+	line-height: 1.5em;
 }

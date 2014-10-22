@@ -2,10 +2,20 @@
 	<div class="container">
 		<h2 class="homeHeader">Real People. Real Stories.</h2>
 		<!-- Setting up columns for videos -->
-			<div class="videos">
-				<iframe class="videoBackground" width="440" height="300" src="//www.youtube.com/embed/qNJw-paeoKI" frameborder="0" allowfullscreen></iframe>
+		<div class="videos">
+			<iframe class="videoBackground" width="440" height="300" src="//www.youtube.com/embed/qNJw-paeoKI" frameborder="0" allowfullscreen></iframe>
 
-				<iframe class="videoBackground" width="440" height="300" src="//www.youtube.com/embed/qNn6Bqt6MrM" frameborder="0" allowfullscreen></iframe>
+			<iframe class="videoBackground" width="440" height="300" src="//www.youtube.com/embed/qNn6Bqt6MrM" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<div class="quoteBlock">
+			<p>Read More Stories...</p>
+		</div>
+
+		<div>
+			<div ng-repeat="patientQuote in patientQuotes" class="quoteBlock">
+				{{patientQuote.quote}} - <strong>{{patientQuote.name}}</strong>
 			</div>
+		</div>
 	</div>
 </div>

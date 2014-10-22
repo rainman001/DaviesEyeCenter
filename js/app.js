@@ -15,6 +15,14 @@ app.config(function($routeProvider) {
 		templateUrl: "js/procedures/proceduresTmpl.html",
 		controller: "proceduresCtrl"
 	}) // Add other pages here
+	.when("/financing", {
+		templateUrl: "js/financing/financingTmpl.html",
+		controller: "financingCtrl"
+	})
+	.when("/contact-us", {
+		templateUrl: "js/contactUs/ContactUsTmpl.html",
+		controller: "contactUsCtrl"
+	})
 	.otherwise({
 		redirectTo: "/"
 	});
