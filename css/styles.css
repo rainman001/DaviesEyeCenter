@@ -3,7 +3,6 @@ html, body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	background-color: #858585;
 }
 
 #mainHeader {
@@ -19,12 +18,25 @@ html, body {
 /* Changing default navbar styling */
 .navbar {
 	background-image: none;
-	background-color: #0066FF;
+	background-color: #333333;
+	border: 0;
+	border-bottom: 1px solid #858585;
+	border-radius: 0;
+	margin: 0;
 }
 
+/* ------------------------------- */
+
+/* Overriding of container styles from bootstrap */
 .container {
 	width: 80%;
 	margin: 0 10%;
+}
+
+/* ------------------------------- */
+
+.contentContainer {
+	background-color: #858585;
 }
 
 .homeHeader {
@@ -58,4 +70,32 @@ html, body {
 	font-size: 1.25em;
 	font-family: "Open Sans";
 	line-height: 1.5em;
+}
+
+.footer {
+	width: 100%;
+	background-color: #858585;
+	margin-top: 2em;
+	color: #fff;
+	text-align: center;
+	font-size: 1em;
+}
+
+.subHeader {
+	width: 100%;
+	background-color: #A3ABBC;
+	font-family: "Open Sans";
+}
+
+.aboutContainer {
+	width: 60%;
+	margin: 1em 20%;
+
+}
+
+.aboutImage {
+	max-width: 300px;
+	max-height: 400px;
+	float: left;
+	margin: 0 1em;
 }
